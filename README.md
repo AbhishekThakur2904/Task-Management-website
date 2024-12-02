@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+# Task Management Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Task Management Dashboard web application built with React, Redux, and JavaScript. It provides functionalities such as creating, updating, deleting, and filtering tasks. The design is responsive, providing an optimal user experience across all devices.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Task Creation**: Users can create new tasks with titles and descriptions.
+- **Task Editing**: Tasks can be edited, including their title, description, and status.
+- **Task Deletion**: Tasks can be removed from the task list.
+- **Filtering**: Tasks can be filtered by their status.
+- **Responsive Design**: The app is fully responsive and works on mobile, tablet, and desktop devices.
+- **Animations**: Smooth animations for task elements and buttons.
+- **Focus States**: Enhanced focus states on form elements for better accessibility.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**:
+  - ReactJS
+  - Redux Toolkit
+  - CSS (for custom styling and responsiveness)
+- **Other Libraries**:
+  - React Router (for routing, if used in future extensions)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation Instructions
 
-### `npm test`
+To run the Task Management Dashboard on your local machine, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Clone the repository
 
-### `npm run build`
+```bash
+git clone https://github.com/AbhishekThakur2904/Task-Management-website.git
+cd task-management-dashboard
+2. Install dependencies
+Make sure you have Node.js and npm installed. Then, install the required dependencies using npm:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+Copy code
+npm install
+3. Start the application
+After the dependencies are installed, you can run the application using the following command:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+Copy code
+npm start
+The application will be available at http://localhost:3000 in your browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Build for production
+If you want to build the application for production, run the following command:
 
-### `npm run eject`
+bash
+Copy code
+npm run build
+This will create an optimized build of the app in the build directory.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Folder Structure
+Here’s an overview of the folder structure:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+bash
+Copy code
+/src
+  /components
+    /TaskForm.js            # Component for adding/editing tasks
+    /TaskList.js            # Component for displaying tasks
+    /TaskItem.js            # Individual task item component
+    /Filters.js             # Component for task filters
+  /redux
+    /taskSlice.js           # Redux slice for managing tasks
+  /App.js                   # Main app component
+  /index.js                 # Entry point for React app
+  /styles.css               # Global styles for the application
+/public
+  index.html                # The main HTML file
+  favicon.ico               # Favicon for the application
+Styling
+The project is styled using custom CSS, with a responsive layout that adapts to different screen sizes.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The design incorporates a linear gradient background and smooth hover effects.
+Responsive media queries for different screen widths ensure the app works on mobile devices as well.
+Contributing
+If you would like to contribute to this project, feel free to fork the repository and submit pull requests. Please follow these steps:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Fork the repository.
+Create a new branch (git checkout -b feature-name).
+Make your changes.
+Commit your changes (git commit -m 'Add new feature').
+Push to the branch (git push origin feature-name).
+Create a new pull request.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Learn More
+Acknowledgements
+ReactJS for building the user interface.
+Redux Toolkit for managing application state efficiently.
+Poppins font for typography.
+Contact
+If you have any questions or suggestions regarding this project, feel free to contact me:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Email: abhishekthakur2904@gmail.com
+GitHub: AbhishekThakur2904
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
